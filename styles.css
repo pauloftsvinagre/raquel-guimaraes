@@ -5,19 +5,19 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
     margin: 0;
 }
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 1200px;
     margin: 0 auto;
 }
 .main-header {
-    background: #222;
+    background: #2c3e50;
     color: white;
     padding: 1rem 0;
 }
@@ -28,38 +28,44 @@ body {
 .main-header .navigation ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .main-header .navigation a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
     padding: 0.5rem 1rem;
-}
-.main-header .navigation a:hover {
-    background: #555;
     border-radius: 4px;
+    transition: background 0.3s;
+}
+.main-header .navigation a:hover,
+.main-header .navigation .active {
+    background: #34495e;
 }
 .hero {
-    background: linear-gradient(to bottom, #333, #555);
+    background: linear-gradient(to bottom, #34495e, #2c3e50);
     color: white;
     text-align: center;
     padding: 4rem 0;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 .hero .cta {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background: #f4b41a;
-    color: #222;
+    background: #e74c3c;
+    color: white;
     text-decoration: none;
     border-radius: 4px;
+    transition: background 0.3s;
 }
 .hero .cta:hover {
-    background: #e5a619;
+    background: #c0392b;
 }
 .main-footer {
-    background: #222;
+    background: #2c3e50;
     color: white;
     text-align: center;
     padding: 1rem 0;
