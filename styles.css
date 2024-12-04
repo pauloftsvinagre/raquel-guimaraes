@@ -1,50 +1,66 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
     color: #333;
-}
-header {
-    background-color: #222;
-    color: #fff;
-    padding: 1.5rem;
-    text-align: center;
-}
-header h1 {
+    background-color: #f9f9f9;
     margin: 0;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-header {
+    background: #222;
+    color: white;
+    padding: 1rem 0;
+}
+.main-header .logo {
     font-size: 2rem;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0;
-}
-nav ul li {
-    margin: 0 1rem;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
     font-weight: bold;
 }
-nav ul li a:hover {
-    text-decoration: underline;
+.main-header .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
-section.content {
-    padding: 2rem;
-    max-width: 900px;
-    margin: 2rem auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.main-header .navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
 }
-footer {
+.main-header .navigation a:hover {
+    background: #555;
+    border-radius: 4px;
+}
+.hero {
+    background: linear-gradient(to bottom, #333, #555);
+    color: white;
     text-align: center;
-    background-color: #222;
-    color: #fff;
+    padding: 4rem 0;
+}
+.hero .cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #f4b41a;
+    color: #222;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.hero .cta:hover {
+    background: #e5a619;
+}
+.main-footer {
+    background: #222;
+    color: white;
+    text-align: center;
     padding: 1rem 0;
 }
